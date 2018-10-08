@@ -1,0 +1,8 @@
+P1:PROCESS(CLR,T4)
+BEGIN
+    IF(CLR='0')THEN
+        M<='0';
+    ELSIF(T4'EVENT AND T4='0')THEN
+        M<=NOT M;
+    END IF;
+END A;
